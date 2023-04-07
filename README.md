@@ -1,4 +1,4 @@
-# The OWASP Vulnerable Container Hub(VULCONHUB) Project
+# The OWASP Vulnerable Container Hub Project
 
 ### Background
 
