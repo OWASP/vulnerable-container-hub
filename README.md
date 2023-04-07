@@ -1,4 +1,4 @@
-# The OWASP Vulnerable Container Hub(VULCONHUB)
+# The OWASP Vulnerable Container Hub(VULCONHUB) Project
 
 ### Background
 
@@ -54,7 +54,9 @@ For more information on the git submodule, see [https://git-scm.com/book/en/v2/G
 3. Examine Dockerfile
 4. Build your own container image
 
-`$ docker build . -t local/<image-name>`
+```bash
+$ docker build . -t local/<image-name>`
+```
 
 5. Run with the proper option such as port. See documentation such as README available in the directory.
 
