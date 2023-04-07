@@ -10,9 +10,9 @@ The problem is, you cannot exactly know what it does(especially, considering it 
 
 Dockerfile provides the information.
 
-Although sometimes Dockerfile is available in the registry service such as [hub.docker.com](http://hub.docker.com) or [quay.i](https://quay.io) or some information on what commands have been used can be derived from `docker history` or IMAGE LAYERS is available, it is challenging to find out some important information such as the base image which was used to build the image (e.g. specified as FROM  in Dockerfile)
+Although sometimes Dockerfile is available in the registry service such as [hub.docker.com](http://hub.docker.com) or [quay.io](https://quay.io) or some information on what commands have been used can be derived from `docker history` or IMAGE LAYERS is available, it is challenging to find out some important information such as the base image which was used to build the image (e.g. specified as FROM  in Dockerfile)
 
-What’s a risker situation is, when a user is asked to run docker with ‘-v’ or docker-compose whose config file has volume. If they do not pay attention, a possible scenario may include where their files can be stolen to some malicious users.  If a user is asked to run a container with `--privileged` or `--user=root`, it can be much more serious, as there is a risk where an attacker can set a foothold in the container and escape to your host.
+What’s a risker situation is, when a user is asked to run docker with the `-v` option or docker-compose whose config file has volume configuration. If they do not pay attention, a possible scenario may include where their files on the host can be stolen to some malicious users.  If a user is asked to run a container with `--privileged` or `--user=root`, it can be much more serious, as there is a risk where an attacker can set a foothold in the container and escape to your host.
 
 See [Docker Security - OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html) for more information on Docker security.
 
