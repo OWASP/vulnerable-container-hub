@@ -1,3 +1,6 @@
 [submodule "ctf/juice-shop"]
 	path = web/juice-shop
 	url = https://github.com/juice-shop/juice-shop
+[submodule "web/Damn-Vulnerable-GraphQL-Application"]
+	path = web/Damn-Vulnerable-GraphQL-Application
+	url = https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application.git
